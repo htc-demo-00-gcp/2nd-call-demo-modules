@@ -20,4 +20,6 @@ resource "kubernetes_service_account" "service_account" {
       "iam.gke.io/gcp-service-account" = var.gcp_service_account_email
     }
   }
+  
+  automount_service_account_token = false
 }
